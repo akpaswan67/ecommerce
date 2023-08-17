@@ -46,6 +46,7 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy":"https://ecommerce-0m16.onrender.com"
   
 }

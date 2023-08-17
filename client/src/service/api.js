@@ -1,10 +1,10 @@
 import axios from 'axios';
 
-const URL = 'https://ecommerce-0m16.onrender.com';
+// const URL = 'https://ecommerce-0m16.onrender.com';
 
 export const authenticateSignup =async(data)=>{
 	try{
-		return await axios.post(`${URL}/signup`,data);
+		return await axios.post(`/signup`,data);
 	}catch(error)
 	{
 		console.log('Error while calling sighup api',error);
@@ -13,7 +13,7 @@ export const authenticateSignup =async(data)=>{
 
 export const authenticateLogin =async(data)=>{
 	try{
-		return await axios.post(`${URL}/login`,data);
+		return await axios.post(`/login`,data);
 	}catch(error)
 	{
 		console.log('Error while calling login api',error);
@@ -23,7 +23,7 @@ export const authenticateLogin =async(data)=>{
 
 export const payUsingPaytm =async(data)=>{
 	try{
-		let response = await axios.post(`${URL}/payment`, data);
+		let response = await axios.post(`/payment`, data);
 		return response.data;
 	}catch(error)
 	{
